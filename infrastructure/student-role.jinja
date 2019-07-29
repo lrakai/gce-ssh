@@ -10,5 +10,9 @@ resources:
       stage: GA
       includedPermissions:
         - resourcemanager.projects.get # Needed for Console views
-        - compute.projects.get # Start needed for GKE Console views
-        - servicemanagement.services.check 
+        - compute.projects.get
+        - compute.projects.setCommonInstanceMetadata
+        - compute.instances.get
+        - compute.instances.list
+        - compute.instances.setMetadata
+        - iam.serviceAccounts.actAs
