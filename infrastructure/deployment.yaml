@@ -1,0 +1,18 @@
+resources:
+- name: ca-lab-vm
+  type: compute.v1.instance
+  properties:
+    zone: us-central1-a
+    machineType: zones/us-central1-a/machineTypes/n1-standard-1
+    disks:
+    - deviceName: ca-lab-disk
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: projects/centos-cloud/global/images/family/centos-7
+    networkInterfaces:
+    - network: global/networks/default
+      accessConfigs:
+      - name: External NAT
+        type: ONE_TO_ONE_NAT

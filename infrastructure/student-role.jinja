@@ -1,0 +1,14 @@
+resources:
+- name: Student Role
+  type: gcp-types/iam-v1:projects.roles
+  properties:
+    parent: projects/{{ env["project"] }}
+    roleId: studentrole_{{ env["current_time"] }}
+    role:
+      title: StudentRole
+      description: Role for students to complete the Lab
+      stage: GA
+      includedPermissions:
+        - resourcemanager.projects.get # Needed for Console views
+        - compute.projects.get # Start needed for GKE Console views
+        - servicemanagement.services.check 
