@@ -68,7 +68,9 @@ Tutorial of how to connect to GCE Linux instances
 
 ## Following Along
 
-1. 
+1. Click __SSH__ from the [VM instances GCE tab](https://console.cloud.google.com/compute/instances) to connect to the instance using SSH from the Browser.
+
+1. Paste a public key into the instance or project SSH key metadata and connect using a standard SSH client.
 
 ## Tearing Down
 
