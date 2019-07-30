@@ -1,6 +1,8 @@
 # gce-ssh
 
-Tutorial of how to connect to GCE Linux instances
+Tutorial of how to connect to GCE Linux instances.
+
+![Final environment](https://user-images.githubusercontent.com/3911650/62163479-ace65600-b2d7-11e9-8188-03b35aee2a00.png)
 
 ## Getting Started
 
