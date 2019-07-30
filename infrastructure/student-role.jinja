@@ -15,4 +15,5 @@ resources:
         - compute.instances.get
         - compute.instances.list
         - compute.instances.setMetadata
-        - iam.serviceAccounts.actAs
+      predefinedRoles: # not standard GCP IAM (attach compute.viewer role in addition to custom role)
+        - roles/compute.viewer
